@@ -3,4 +3,4 @@ check-milestone:
   targetBranches:
     - rc
 check-wip:
-  enabled: true
+  enabled: false
