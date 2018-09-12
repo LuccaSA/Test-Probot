@@ -1,0 +1,6 @@
+check-milestone:
+  enabled: true
+  targetBranches:
+    - rc
+check-wip:
+  enabled: true
