@@ -1,4 +1,48 @@
 check-milestone:
   enabled: true
   targetBranches:
-    - rc
+    - "rc"
+check-wip:
+  enabled: true
+check-functional-review:
+  enabled: true
+  protectedBranches:
+    - "master"
+    - "rc"
+  validatingSentences:
+    - "revue fonctionnelle validée"
+    - "revue fonctionnelle inutile"
+    - "recette validée"
+    - ":shipit:"
+check-functional-description:
+  enabled: true
+  protectedBranches:
+    - "rc"
+notify-pr-assignment:
+  enabled: true
+  branchesPatterns:
+    - pattern: "^CI(\\.|-).*"
+      BU: "plateforme"
+    - pattern: "^F(I|F)(\\.|-).*"
+      BU: "figgo"
+    - pattern: "^L(U|ucca|uccaCore|C)(\\.|-).*"
+      BU: "luccacore"
+    - pattern: "^bulp(\\.|-).*"
+      BU: "bulp"
+    - pattern: "^t(immi|proj)(\\.|-).*"
+      BU: "timmi"
+    - pattern: "^pagga(\\.|-).*"
+      BU: "pagga"
+    - pattern: "^p(f|op|oplee|rem|opbug)(\\.|-).*"
+      BU: "poplee"
+  notification-preferences:
+    - figgo:
+      channel: "#figgo-pr-review"
+      delay: 10000
+    - poplee:
+      channel: "#poplee-pr-review"
+      delay: 10000
+    - pagga:
+      channel: "#poplee-pr-review"
+      delay: 10000
+
