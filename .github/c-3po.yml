@@ -37,12 +37,12 @@ notify-pr-assignment:
       BU: "poplee"
   notification-preferences:
     - figgo:
-      channel: "#figgo-pr-review"
-      delay: 10000
+        channel: "#figgo-pr-review"
+        delay: 10000
     - poplee:
-      channel: "#poplee-pr-review"
-      delay: 10000
+        channel: "#poplee-pr-review"
+        delay: 10000
     - pagga:
-      channel: "#poplee-pr-review"
-      delay: 10000
+        channel: "#poplee-pr-review"
+        delay: 10000
 
