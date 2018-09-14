@@ -36,13 +36,13 @@ notify-pr-assignment:
     - pattern: "^p(f|op|oplee|rem|opbug)(\\.|-).*"
       BU: "poplee"
   notification-preferences:
-    - figgo:
-        channel: "#figgo-pr-review"
-        delay: 10000
-    - poplee:
-        channel: "#poplee-pr-review"
-        delay: 10000
-    - pagga:
-        channel: "#poplee-pr-review"
-        delay: 10000
+    figgo:
+      channel: "#figgo-pr-review"
+      delay: 10000
+    poplee:
+      channel: "#poplee-pr-review"
+      delay: 10000
+    pagga:
+      channel: "#poplee-pr-review"
+      delay: 10000
 
