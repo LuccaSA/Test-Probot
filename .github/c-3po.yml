@@ -24,6 +24,7 @@ check-rebuild-asked:
     - "#international2018"
     - "rebuild"
     - "🌐"
+  buildPipeline: "CI.Pipeline.Multibranch"
 notify-pr-assignment:
   enabled: true
   branchesPatterns:
