@@ -25,8 +25,7 @@ check-rebuild-asked:
     - "rebuild"
     - "🌐"
   buildPipeline: "CI.Pipeline.Multibranch"
-  jenkinsHostname: "jenkins2.lucca.local"
-  jenkinsPort: 8080
+  jenkinsBaseUrl: "http://jenkins2.lucca.local:8080"
   jenkinsBuildParameters:
     SKIP_SONAR: false
     SKIP_TEST: false
