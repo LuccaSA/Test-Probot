@@ -24,11 +24,8 @@ check-rebuild-asked:
     - "#international2018"
     - "rebuild"
     - "🌐"
-  buildPipeline: "CI.Pipeline.Multibranch"
+  buildPipeline: "NoMonolith/job/Figgo"
   jenkinsBaseUrl: "http://jenkins2.lucca.local:8080"
-  jenkinsBuildParameters:
-    SKIP_SONAR: false
-    SKIP_TEST: false
 notify-pr-assignment:
   enabled: true
   branchesPatterns:
