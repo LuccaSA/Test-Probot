@@ -26,6 +26,7 @@ check-rebuild-asked:
     - "🌐"
   buildPipeline: "CI.Pipeline.Multibranch"
   jenkinsBaseUrl: "http://jenkins2.lucca.local:8080"
+  buildWithParameters: []
 notify-pr-assignment:
   enabled: true
   branchesPatterns:
