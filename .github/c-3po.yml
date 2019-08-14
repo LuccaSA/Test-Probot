@@ -2,6 +2,9 @@ check-milestone:
   enabled: true
   targetBranches:
     - "rc"
+    - "pattern:^rc\\.mep\\.\\d{4}-\\d{2}-\\d{2}$"
+  linkMilestonesToMepBranches:
+    enabled: true
 check-wip:
   enabled: true
 check-functional-review:
