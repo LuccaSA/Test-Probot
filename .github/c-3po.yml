@@ -17,6 +17,14 @@ check-functional-review:
     - "revue fonctionnelle inutile"
     - "recette validée"
     - ":shipit:"
+check-mep-release:
+  enabled: true
+  protectedBranches:
+    - "pattern:^rc\\.mep\\.\\d{4}-\\d{2}-\\d{2}$"
+  validatingSentences:
+    - "✔️"
+    - "PR autorisée"
+  validatingTeamId: 3372183
 check-functional-description:
   enabled: true
   protectedBranches:
