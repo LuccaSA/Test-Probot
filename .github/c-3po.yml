@@ -17,7 +17,7 @@ check-functional-review:
     - "revue fonctionnelle inutile"
     - "recette validée"
     - ":shipit:"
-check-mep-release:
+check-mep-release-approval:
   enabled: true
   protectedBranches:
     - "pattern:^rc\\.mep\\.\\d{4}-\\d{2}-\\d{2}$"
