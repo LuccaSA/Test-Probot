@@ -24,7 +24,7 @@ check-mep-release-approval:
   validatingSentences:
     - "✔️"
     - "PR autorisée"
-  validatingTeamId: 3372183
+  validatingTeamId: 1830674
 check-functional-description:
   enabled: true
   protectedBranches:
