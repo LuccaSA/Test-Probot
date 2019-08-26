@@ -1,0 +1,76 @@
+check-milestone:
+  enabled: true
+  targetBranches:
+    - "rc"
+    - "pattern:^rc\\.mep\\.\\d{4}-\\d{2}-\\d{2}$"
+  linkMilestonesToMepBranches:
+    enabled: true
+check-wip:
+  enabled: true
+check-functional-review:
+  enabled: true
+  protectedBranches:
+    - "master"
+    - "rc"
+  validatingSentences:
+    - "revue fonctionnelle validée"
+    - "revue fonctionnelle inutile"
+    - "recette validée"
+    - ":shipit:"
+check-functional-description:
+  enabled: true
+  protectedBranches:
+    - "rc"
+check-rebuild-asked:
+  enabled: true
+  validatingSentences:
+    - "#international2018"
+    - "rebuild"
+    - "🌐"
+  buildPipeline: "CI.Pipeline.Multibranch"
+  jenkinsBaseUrl: "http://jenkins2.lucca.local:8080"
+  jenkinsBuildParameters: []
+notify-pr-assignment:
+  enabled: true
+  branchesPatterns:
+    - pattern: "^CI(\\.|-).*"
+      BU: "plateforme"
+    - pattern: "^F(I|F)(\\.|-).*"
+      BU: "figgo"
+    - pattern: "^L(U|ucca|uccaCore|C)(\\.|-).*"
+      BU: "luccacore"
+    - pattern: "^bulp(\\.|-).*"
+      BU: "bulp"
+    - pattern: "^t(immi|proj)(\\.|-).*"
+      BU: "timmi"
+    - pattern: "^pagga(\\.|-).*"
+      BU: "pagga"
+    - pattern: "^p(f|op|oplee|rem|opbug)(\\.|-).*"
+      BU: "poplee"
+  notification-preferences:
+    figgo:
+      channel: "#figgo-pr-review"
+      delay: 10000
+    poplee:
+      channel: "#poplee-pr-review"
+      delay: 10000
+    pagga:
+      channel: "#poplee-pr-review"
+      delay: 10000
+check-labels:
+  enabled: true
+  protectedBranches:
+    master:
+      - "software"
+    rc:
+      - "type"
+      - "software"
+  categories:
+    type:
+      pattern: ":bookmark:.*"
+      min: 1
+      max: 1
+    software:
+      pattern: ":package:.*"
+      min: 1
+      max: 1
