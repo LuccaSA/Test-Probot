@@ -76,13 +76,16 @@ check-labels:
     - "master"
     - "rc"
   categories:
-    bug:
-      pattern: ":bug:"
-      description: "Ne doit pas être un bug"
-      min: 0
-      max: 1
+    wip:
+      pattern: "^wip$|^donotmerge$"
+      description: "Ne doit pas être un work in progress ou marqué comme do not merge"
+      max: 0
     enhancement:
-      pattern: ":enhancement:"
-      description: "Doit être une amélioration"
+      pattern: "^enhancement$|^bug$"
+      description: "Doit être une amélioration ou un bug fix"
       min: 1
-      max: 1
+    products:
+      pattern: "^product-.*"
+      description: "Doit porter sur un produit minimum, mais pas plus de 2"
+      min: 1
+      max: 2    
