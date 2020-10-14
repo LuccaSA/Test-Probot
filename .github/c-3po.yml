@@ -70,6 +70,15 @@ notify-pr-assignment:
     pagga:
       channel: "#poplee-pr-review"
       delay: 10000
+notify-pr-build-failed:
+  enabled: true
+  branchesPatterns:
+    - pattern: "^t(immi|proj)(\\.|-).*"
+      BU: "timmi"
+  notification-preferences:
+    timmi:
+      channel: "#timmi-pr-review"
+      delay: 10000
 check-labels:
   enabled: true
   protectedBranches:
