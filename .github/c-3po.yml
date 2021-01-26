@@ -34,6 +34,7 @@ check-functional-description:
   enabled: true
   protectedBranches:
     - "rc"
+  uncheckTypes: true
 check-rebuild-asked:
   enabled: true
   validatingSentences:
