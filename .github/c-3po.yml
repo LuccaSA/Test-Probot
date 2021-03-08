@@ -99,3 +99,6 @@ check-labels:
       description: "Doit porter sur un produit minimum, mais pas plus de 2"
       min: 1
       max: 2    
+check-migration-merge:
+  enabled: true
+  targetBranch: master
