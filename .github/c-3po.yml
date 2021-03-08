@@ -103,3 +103,5 @@ check-migration-merge:
   enabled: true
   targetBranches:
     - master
+  teamReviewers:
+    - "verificateurs-de-sql"
