@@ -101,4 +101,5 @@ check-labels:
       max: 2    
 check-migration-merge:
   enabled: true
-  targetBranch: master
+  targetBranches:
+    - master
