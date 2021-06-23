@@ -109,4 +109,4 @@ notify-added-label:
   enabled: true
   properties:
     - label: test
-      channel: "C025V6Z73FF"
+      channel: "#timmi-pr-review"
