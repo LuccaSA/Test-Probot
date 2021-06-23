@@ -104,4 +104,9 @@ check-migration-merge:
   targetBranches:
     - master
   teamReviewers:
-    - "verificateurs-de-sql"
+    - "verificateurs-de-sql"    
+notify-added-label:
+  enabled: true
+  properties:
+    - label: test
+      channel: "C025V6Z73FF"
